@@ -1,0 +1,22 @@
+﻿<Window x:Class="L6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L6"
+        mc:Ignorable="d"
+        Title="Lab 6" Height="650"  Width="420">
+   
+        <Canvas Name ="MyCanvas" Focusable="true" Background="Black" KeyDown="onKeyDown" KeyUp="OneKeyUp">
+            <Rectangle Name="player" Height="50" Width="70" Fill="Yellow" Canvas.Left="170" Canvas.Top="508"/>
+            <Canvas x:Name="UpTools" Panel.ZIndex="2" Focusable="False" Background="White" Width="412" Height="50">
+                <Label x:Name="scoreText" Content="Score: 0" FontSize="18" FontWeight="Bold" Foreground="Black" Canvas.Top="10" Canvas.Left="10"/>
+                <Label x:Name="damageText" Content="Damage: 0" FontSize="18" FontWeight="Bold" Foreground="Black" Canvas.Left="274" Canvas.Top="10"/>
+            </Canvas>
+        <Canvas x:Name="DownTools" Panel.ZIndex="2" Focusable="False" Background="White" Width="412" Height="50" Canvas.Top="569">
+                <Label x:Name="shootsText" Content="Overheating: 0%" FontSize="18" FontWeight="Bold" Foreground="Black" Canvas.Left="10" Canvas.Top="6"/>
+            </Canvas>
+        </Canvas>
+    
+
+</Window>

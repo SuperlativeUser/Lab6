@@ -1,0 +1,15 @@
+﻿<Window x:Class="L6.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L6"
+        mc:Ignorable="d"
+        Title="Menu" Height="476.389" Width="374">
+    <Grid>
+        <Button x:Name="playButton" Content="Play" HorizontalAlignment="Left" Margin="123,73,0,0" VerticalAlignment="Top" Width="114" Height="46" Background="WhiteSmoke" Click="Button_Click"/>
+        <Button x:Name="dificultyButton" Content="Dificulty" HorizontalAlignment="Left" Margin="123,196,0,0" VerticalAlignment="Top" Width="114" Height="46" Background="WhiteSmoke" Click="Button_Click_1"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="123,320,0,0" VerticalAlignment="Top" Width="114" Height="46" Background="WhiteSmoke" Click="exitButton_Click"/>
+
+    </Grid>
+</Window>
